@@ -1,0 +1,6 @@
+{
+  "name": "Node Chat Example",
+  "description": "A barebones Node.js app using Express 4 and socket.io",
+  "repository": "https://github.com/makingsensetraining/hybrid_node",
+  "keywords": ["node", "express", "socket.io", "child_process"]
+}

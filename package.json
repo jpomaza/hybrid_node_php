@@ -1,0 +1,12 @@
+{
+  "name": "hibrid_node",
+  "version": "0.0.1",
+  "description": "my first hybrid app",
+  "scripts" : {
+  	"starts" : "node server.js"
+  },
+  "dependencies": {
+    "express": "4.10.2",
+    "socket.io": "1.2.0"
+  }
+}
