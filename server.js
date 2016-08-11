@@ -13,8 +13,7 @@ app.use(methodOverride());
 app.use(router);
 /*to make it persistent in test.js*/
 app.set('io',io);
-
-
+app.set('env',app.settings.env);
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');

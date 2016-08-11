@@ -6,9 +6,17 @@ exports.setMessage = function(req, res) {
     console.log(req.body.wait);
     
     //PHP api call
+    var apiHost = '';    
+    if (req.body.app.settings.env === 'development' ) {
+    	apiHost = 'http://local.apiphp.dev';
+    }else{
+    	apiHost = 'https://php-api.herokuapp.com';
+    }
+
+    console.log(apiHost);
     var options = {  
               method: 'PUT',
-              uri: 'http://local.apiphp.dev/api/setMessage',
+              uri: apiHost+'/api/setMessage',
               headers: {
                       	'Content-Type': 'application/json; charset=utf-8',
                       	'Content-Length': req.body.length
